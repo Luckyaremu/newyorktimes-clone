@@ -78,7 +78,7 @@ article {
   font-size: 17px;
   color: rgb(87, 87, 87);
 }
-.section-one {
+.section-one, .center-section {
   text-align: center;
   display: inline-block;
   width: 40%;
@@ -135,6 +135,7 @@ aside h3 {
   color: #000;
 }
 .center-section {
+<<<<<<< HEAD
   width: 60vw;
 } */
 
@@ -166,3 +167,8 @@ aside {
     font-size: 14px;
     color: #000;
   }
+=======
+display: grid;
+align-items: center
+}
+>>>>>>> 74707a5fee5f9f9722d77e02b7862e6152da21e6
