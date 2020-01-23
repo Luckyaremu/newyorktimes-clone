@@ -78,7 +78,7 @@ article {
   font-size: 17px;
   color: rgb(87, 87, 87);
 }
-.section-one {
+.section-one, .center-section {
   text-align: center;
   display: inline-block;
   width: 40%;
@@ -135,5 +135,6 @@ aside h3 {
   color: #000;
 }
 .center-section {
-  width: 60vw;
+display: grid;
+align-items: center
 }
