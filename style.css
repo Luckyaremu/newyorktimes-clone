@@ -1,3 +1,139 @@
-body{
-    font-family: 'EB Garamond', serif;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+}
+/* --------Navbar Styling --------- */
+.header {
+  border-bottom: 1px lightgrey solid;
+  box-shadow: none;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.header ul {
+  display: grid;
+  grid-template-columns: 30px 30px 220px 1fr 150px 80px;
+  width: 100%;
+  list-style: none;
+  align-items: center;
+  justify-items: center;
+}
+
+.header ul :nth-child(4) {
+  display: grid;
+}
+
+.header li,
+.header a {
+  display: grid;
+  align-items: center;
+  margin: auto;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header button {
+  background: #5c8099;
+  padding: 10px;
+  height: 35px;
+  border-radius: 6px;
+  color: white;
+  font-size: 13px;
+}
+
+.header img {
+  width: 15rem;
+}
+
+/* --------- End of navbar  styling ---------- */
+article {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  display: inline-block;
+  width: 75%;
+}
+
+.title h1 {
+  font-size: 40px;
+  padding: 40px;
+}
+.title img {
+  width: 100%;
+  height: 50%;
+}
+.title p {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 17px;
+  color: rgb(87, 87, 87);
+}
+.section-one {
+  text-align: center;
+  display: inline-block;
+  width: 40%;
+  font-size: 23px;
+}
+.author-one,
+.author-one a {
+  text-align: left;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+.section-one ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 40px 40px 40px 40px 40px 40px;
+}
+.section-one li {
+  text-align: left;
+  font-weight: 100;
+  font-size: 14px;
+}
+.section-one i {
+  font-size: 19px;
+}
+.section-one p {
+  text-align: left;
+}
+.section-one a {
+  color: #5f8faf;
+  text-decoration: none;
+}
+.center-div {
+  width: 40vw;
+}
+
+aside {
+  float: right;
+  width: 180px;
+  font-size: 15px;
+  display: grid;
+}
+aside img {
+  width: 75px;
+  float: left;
+  margin-right: 10px;
+}
+aside h3 {
+  font-size: 14px;
+  color: #000;
+}
+.center-section {
+  width: 60vw;
 }
