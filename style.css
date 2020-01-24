@@ -12,6 +12,9 @@ body {
   box-shadow: none;
   padding: 5px;
   font-weight: bold;
+  position: fixed;
+  width: 100%;
+  background-color: white;
 }
 
 .header ul {
@@ -78,16 +81,19 @@ article {
   font-size: 17px;
   color: rgb(87, 87, 87);
 }
-.section-one, .center-section {
+.section-one {
   text-align: center;
   display: inline-block;
   width: 40%;
   font-size: 23px;
 }
-.author-one,
-.author-one a {
+.author-one {
   text-align: left;
   font-weight: bolder;
+  display: grid;
+}
+.author-one a {
+  display: inline;
   text-decoration: none;
   color: black;
   padding-top: 25px;
@@ -95,46 +101,243 @@ article {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
 }
-.section-one ul {
+.symbols ul {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 40px 40px 40px 40px 40px 40px;
-}
-.section-one li {
-  text-align: left;
-  font-weight: 100;
-  font-size: 14px;
-}
-.section-one i {
-  font-size: 19px;
-}
-.section-one p {
-  text-align: left;
-}
-.section-one a {
-  color: #5f8faf;
+  padding: 1fr/ 20px 1fr;
   text-decoration: none;
 }
-.center-div {
-  width: 40vw;
+
+.symbols li {
+  text-align: left;
+  font-weight: 100;
+  font-size: 15px;
+  text-decoration: none;
+}
+.first-section {
+  text-align: left;
+}
+.first-section a {
+  color: #5c8099;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.middle-p {
+  margin: auto;
+  text-align: center;
+  padding: 40px;
 }
 
 aside {
+  width: 250px;
   float: right;
-  width: 180px;
-  font-size: 15px;
-  display: grid;
+  margin-top: -18rem;
+  margin-right: 11%;
 }
-aside img {
-  width: 75px;
+
+.editors-picks li {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.editors-picks img {
+  width: 30%;
+  height: 30%;
   float: left;
   margin-right: 10px;
 }
-aside h3 {
-  font-size: 14px;
+.editors-picks h3 {
+  font-size: 20px;
   color: #000;
 }
-.center-section {
-display: grid;
-align-items: center
+.editors-picks a {
+  font-size: 12px;
+  display: block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+.editors-picks p {
+  display: inline-block;
+  padding: 2px;
+  font-size: small;
+  width: 8rem;
+}
+.middle-design {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin: 1rem;
+}
+.middle-design p {
+  font-size: 13px;
+}
+.middle-design img {
+  width: 100%;
+  height: 10rem;
+}
+
+.secondp {
+  margin: auto;
+  width: 40%;
+  font-size: 20px;
+  display: block;
+}
+.editor-item {
+  display: flex;
+  padding: 1rem;
+}
+.theory {
+  width: 70%;
+  margin-left: 15%;
+}
+.theory h3 {
+  margin: 1rem;
+  font-weight: 300;
+  font-size: 16px;
+}
+.hr {
+  width: 6rem;
+  margin: 1rem;
+}
+.section-two {
+  margin: auto;
+  width: 40%;
+  font-size: 20px;
+  display: block;
+  text-align: justify;
+}
+.section-two h3 {
+  font-weight: bolder;
+  padding-top: 2rem;
+}
+.video-embed {
+  padding-top: 4rem;
+}
+.video-embed p {
+  font-size: 18px;
+  padding-bottom: 3rem;
+}
+.telescope-image {
+  margin: auto;
+  width: 50%;
+  font-size: 20px;
+  display: block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: rgb(83, 83, 83);
+  font-size: 19px;
+}
+.telescope-image img {
+  width: 100%;
+}
+.section-three {
+  margin: auto;
+  width: 40%;
+  font-size: 20px;
+  display: block;
+  text-align: justify;
+}
+
+.footer-symbols ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 40px 40px 40px 40px;
+  padding: 1fr/ 20px 1fr;
+  text-decoration: none;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.footer-symbols li {
+  text-align: left;
+  font-weight: 100;
+  font-size: 15px;
+  text-decoration: none;
+}
+.footer-symbols button {
+  background: #5c8099;
+  padding: 0.8rem;
+  width: 70%;
+  border-radius: 5px;
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+  margin-bottom: 3rem;
+}
+.section-end,
+.section-end a {
+  padding-top: 2rem;
+  font-size: 15px;
+  color: rgb(117, 116, 116);
+}
+.more-stories {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2rem;
+  width: 80%;
+  margin-left: 10%;
+}
+.space-astronomy {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+.space-astronomy p {
+  font-size: 13px;
+  color: gray;
+}
+.writer {
+  text-align: right;
+}
+
+.space-astronomy a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.space-astronomy img {
+  width: 100%;
+}
+/* .stories-link {
+  margin-bottom: 3rem;
+} */
+.stories-one {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 19px;
+  color: #000;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.most-popular h3 {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 19px;
+}
+.most-popular a {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+}
+.bottom-hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+/* .editors-pick{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+} */
+.editor-pic-one{
+  width:52vw;
+  margin-left: 10%
 }
