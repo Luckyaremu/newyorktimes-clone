@@ -12,6 +12,9 @@ body {
   box-shadow: none;
   padding: 5px;
   font-weight: bold;
+  position: fixed;
+  width: 100%;
+  background-color:white;
 }
 
 .header ul {
@@ -78,16 +81,20 @@ article {
   font-size: 17px;
   color: rgb(87, 87, 87);
 }
-.section-one, .center-section {
+section{
   text-align: center;
   display: inline-block;
   width: 40%;
   font-size: 23px;
 }
-.author-one,
-.author-one a {
+.author-one{
   text-align: left;
   font-weight: bolder;
+  display: grid;
+ 
+}
+.author-one a{
+  display: inline;
   text-decoration: none;
   color: black;
   padding-top: 25px;
@@ -95,30 +102,55 @@ article {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
 }
-.section-one ul {
+.symbols ul {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 40px 40px 40px 40px 40px 40px;
+  padding: 1fr/ 20px 1fr;
+  text-decoration: none;
+
 }
-.section-one li {
+
+.symbols li {
   text-align: left;
   font-weight: 100;
-  font-size: 14px;
+  font-size: 15px;
+  text-decoration: none;
 }
-.section-one i {
+.firstp{
+  margin: auto;
+  display: grid;
+  width: 40%;
+}
+.sidebar{
+  float: right;
+    width: 210px;
+}
+.middle-p {
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+}
+.secondp{
+  margin: auto;
+  display: grid;
+  width: 40%;
+  font-size: 20px;
+}
+/* .section i {
   font-size: 19px;
 }
-.section-one p {
+.section p {
   text-align: left;
 }
-.section-one a {
+.section a {
   color: #5f8faf;
   text-decoration: none;
 }
+
 .center-div {
   width: 40vw;
 }
-
 /* aside {
   float: right;
   width: 180px;
@@ -135,40 +167,60 @@ aside h3 {
   color: #000;
 }
 .center-section {
-<<<<<<< HEAD
   width: 60vw;
 } */
 
 aside {
     float: right;
-    width: 210px;
-  }
-  
-  
-  
-  aside h2 {
+    width: 110px;
+  } 
+  /* aside h3 {
     font-size: 14px;
     border-bottom: 1px solid rgb(226, 226, 226);
     padding-bottom: 15px;
-    margin-top: 130%;
-  
+    margin-top: 130%; */
   }
   .editors-picks li {
     display: inline-block;
     margin-bottom: 15px;
-  
   }
   .editors-picks img {
-    width: 75px;
+    width: 40%;
+    height: 40%;
     float: left;
     margin-right: 10px;
   }
   .editors-picks h3 {
-    font-size: 14px;
+    font-size: 20px;
     color: #000;
+    /* padding: 20px; */
   }
-=======
-display: grid;
-align-items: center
-}
->>>>>>> 74707a5fee5f9f9722d77e02b7862e6152da21e6
+  .editors-picks a{
+    font-size: 12px;
+    display: block;
+  }
+  .editors-picks p{
+    display: inline-flex;
+    margin: auto;
+    padding: 2px;
+    font-size: small;
+  }
+  .middle-design{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 1rem;
+    width: 75%;
+    margin-left: 10%;
+    
+  }
+  .middle-design p{
+    font-size: 13px;
+    /* display: inherit; */
+  }
+  .middle-design img{
+
+    width: 100%;
+    height: 10rem;
+    
+  }
