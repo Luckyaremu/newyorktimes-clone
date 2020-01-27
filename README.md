@@ -1,6 +1,6 @@
 > newyorktimes-clone page
 
-![screenshot](./app_screenshot.png)
+![screenshot](./img/screenshot.png)
 
 A clone of the beautifull new york times editorial.
 
@@ -11,14 +11,12 @@ A clone of the beautifull new york times editorial.
 
 ## Live Demo
 
-[Live Demo Link]()
-
+[Live Demo Link](https://peaceful-stonebraker-d86e1f.netlify.com/)
 
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
 **Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
@@ -35,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Install VSCode or any code editor you like
 - Install Node JS and nmp(most recents versions)
-- Run this command on your terminal in order to install stylelint: npm install stylelint stylelint-config-recommended --save-dev 
+- Run this command on your terminal in order to install stylelint: npm install stylelint stylelint-config-recommended --save-dev
 
 ### Usage
 
@@ -50,20 +48,19 @@ To get a local copy up and running follow these simple example steps.
 - Upload all the files in the htdocs folder of your domain
 - Access your domain name in browser
 
-
-
 ## Authors
 
-👤 ****
+👤 **Author1**
+Patrick Nyatindo
 
-- Github: [@githubhandle]()
+- Github: [@githubhandle](https://github.com/nyatindopatrick)
 - Twitter: [@twitterhandle]()
 - Linkedin: [linkedin]()
 
 👤 **Author2**
-    Aremu Lucky
+Aremu Lucky
 
-- Github: [@githubhandle](https://github.com/Luckyaremu )
+- Github: [@githubhandle](https://github.com/Luckyaremu)
 - Twitter: [@twitterhandle]()
 - Linkedin: [linkedin]()
 
@@ -84,4 +81,3 @@ Give a ⭐️ if you like this project!
 - etc
 
 ## 📝 License
-
