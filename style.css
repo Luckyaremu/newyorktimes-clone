@@ -8,23 +8,24 @@ body {
 }
 
 /* --------Navbar Styling --------- */
+
 .header {
+  background-color: white;
   border-bottom: 1px lightgrey solid;
   box-shadow: none;
-  padding: 5px;
   font-weight: bold;
+  padding: 5px;
   position: fixed;
   width: 100%;
-  background-color: white;
 }
 
 .header ul {
+  align-items: center;
   display: grid;
   grid-template-columns: 30px 30px 220px 1fr 150px 80px;
-  width: 100%;
-  list-style: none;
-  align-items: center;
   justify-items: center;
+  list-style: none;
+  width: 100%;
 }
 
 .header ul :nth-child(4) {
@@ -33,21 +34,21 @@ body {
 
 .header li,
 .header a {
-  display: grid;
   align-items: center;
-  margin: auto;
   color: black;
+  display: grid;
   font-weight: bold;
+  margin: auto;
   text-decoration: none;
 }
 
 .header button {
   background: #5c8099;
-  padding: 10px;
-  height: 35px;
   border-radius: 6px;
   color: white;
   font-size: 13px;
+  height: 35px;
+  padding: 10px;
 }
 
 .header img {
@@ -59,14 +60,14 @@ body {
 /* Main image  */
 
 article {
-  text-align: center;
   display: inline-block;
+  text-align: center;
   width: 100%;
 }
 
 .title {
-  text-align: center;
   display: inline-block;
+  text-align: center;
   width: 75%;
 }
 
@@ -76,16 +77,16 @@ article {
 }
 
 .title img {
-  width: 100%;
   height: 50%;
+  width: 100%;
 }
 
 .title p {
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  font-size: 17px;
   color: rgb(87, 87, 87);
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 /* end of main image */
@@ -93,31 +94,31 @@ article {
 /* icon bars and first section */
 
 .section-one {
-  text-align: center;
   display: inline-block;
-  width: 40%;
   font-size: 23px;
+  text-align: center;
+  width: 40%;
 }
 
 .author-one {
-  text-align: left;
-  font-weight: bolder;
   display: grid;
+  font-weight: bolder;
+  text-align: left;
 }
 
 .author-one a {
-  display: inline;
-  text-decoration: none;
   color: black;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  display: inline;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-decoration: none;
 }
 
 .symbols ul {
-  list-style: none;
   display: grid;
+  list-style: none;
   grid-template-columns: 1fr 40px 40px 40px 40px 40px 40px;
   padding: 1fr/ 20px 1fr;
   text-decoration: none;
@@ -416,16 +417,23 @@ aside {
 
 /* End of footer side bars */
 
-/* footer */
-footer{
-  display: grid;
-  grid-template-rows: 1fr / 3fr 1fr 1fr;
-  align-content: center;
+ /* more info */
+
+.footer-hr{
+  width: 80%;
+  padding: 0.5px;
+  border: 0.5px solid gray;
+  border-left: none;
+  border-right: none;
+  margin: auto;
 }
-.footer-image{
-  width: 15rem;
+
+.buttom-image img{
+  width: 10rem;
+  margin-left: 11%;
+  padding-top: 10px;
 }
-.footer-design{
+.buttom-design{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-content: center;
@@ -435,24 +443,39 @@ footer{
   width: 80%;
   margin-left: 10%;
 }
-.footer-design a{
+.buttom-design a{
   color: black;
+  text-decoration: none;
 }
+.buttom-design ul{
+  list-style: none;
+  margin: 1rem;
+  font-size: 15px;
+}
+.education{
+  border-bottom: 0.5px solid gray;
+  padding-bottom: 5px;
+}
+.mobile{
+  padding-top: 6px;
+}
+
+/* end of more info */
+
+/* footer */
 
 .trade-mark {
   margin: auto;
   padding: 20px;
+  display: flex;
 }
 .trade{
-  display: grid;
-  grid-template-columns: repeat(13, 1fr);
+  display: flex;
   align-content: center;
-  font-size: 15px;
-  padding-right: 10px;
-  grid-gap: 2rem;
-  width: 80%;
-  margin-left: 10%;
+  font-size: 10px;
+  width: 100%;
   text-decoration: none;
+  margin-left: 10%;
 }
 
 .trade-mark a{
@@ -460,23 +483,38 @@ footer{
   text-decoration: none;
 }
 .trade-mark ul{
-  text-decoration: none;
+  list-style: none;
 }
+.trade li{  
+  padding: 10px;  
+  align-content: center;
+}
+
 
 .access{
-  padding-top: 10px;
   margin: auto;
-  padding: 30px;
-  align-items: center;
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr ;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding-bottom: 30px;
 }
 
-.access h4{
-  margin-left: 50%;
+.expand{
+  position: absolute;
+  right: 0;
+  padding-right: 3rem;
+  display: flex;
+  align-items: baseline;
 }
-.access i{
-  float: right;
+.expand h4{
+  padding-right: 3rem;
+}
+.main-footer{
+  padding-bottom: 10%;
 }
 
+/* end of footer */
 
