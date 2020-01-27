@@ -5,6 +5,8 @@
 
 body {
   font-family: 'EB Garamond', serif;
+  position: absolute;
+  justify-content: center;
 }
 
 /* --------Navbar Styling --------- */
@@ -100,6 +102,15 @@ article {
   width: 40%;
 }
 
+@media screen and (max-width: 750px) {
+  .section-one {
+    width: 100%;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 30px;
+  }
+}
+
 .author-one {
   display: grid;
   font-weight: bolder;
@@ -150,15 +161,41 @@ article {
   padding: 40px;
 }
 
+.middle-p a {
+  color: #5c8099;
+}
+
+@media screen and (max-width: 750px) {
+  .middle-p {
+    width: 100%;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 30px;
+  }
+}
+
 /* end of middle create account */
 
 /* Side bar first Side bar */
 
 aside {
   width: 250px;
-  float: right;
   margin-top: -18rem;
-  margin-right: 11%;
+  margin-right: 8rem;
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  aside {
+    margin-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  aside {
+    display: none;
+  }
 }
 
 .editors-picks li {
@@ -179,7 +216,6 @@ aside {
 }
 
 .editors-picks a {
-  font-size: 12px;
   display: block;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #000;
@@ -221,6 +257,15 @@ aside {
   display: block;
 }
 
+@media screen and (max-width: 750px) {
+  .secondp {
+    width: 100%;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 30px;
+  }
+}
+
 .editor-item {
   display: flex;
   padding: 1rem;
@@ -229,6 +274,19 @@ aside {
 .theory {
   width: 70%;
   margin-left: 15%;
+}
+
+@media screen and (max-width: 750px) {
+  .theory {
+    width: 100%;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 30px;
+  }
+
+  .theory p {
+    font-size: 25px;
+  }
 }
 
 .theory h3 {
@@ -254,6 +312,15 @@ aside {
   text-align: justify;
 }
 
+@media screen and (max-width: 750px) {
+  .section-two {
+    width: 100%;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 30px;
+  }
+}
+
 .section-two h3 {
   font-weight: bolder;
   padding-top: 2rem;
@@ -265,6 +332,10 @@ aside {
 
 .video-embed {
   padding-top: 4rem;
+}
+
+.video-embed iframe {
+  width: 100%;
 }
 
 .video-embed p {
@@ -284,11 +355,19 @@ aside {
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: rgb(83, 83, 83);
-  font-size: 19px;
 }
 
 .telescope-image img {
   width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .telescope-image {
+    width: 100%;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 30px;
+  }
 }
 
 .section-three {
@@ -297,6 +376,15 @@ aside {
   font-size: 20px;
   display: block;
   text-align: justify;
+}
+
+@media screen and (max-width: 750px) {
+  .section-three {
+    width: 100%;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 30px;
+  }
 }
 
 /* End of Embed telescope image */
@@ -410,16 +498,17 @@ aside {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.editor-pic-one{
-  width:52vw;
+
+.editor-pic-one {
+  width: 52vw;
   padding-bottom: 2rem;
 }
 
 /* End of footer side bars */
 
- /* more info */
+/* more info */
 
-.footer-hr{
+.footer-hr {
   width: 80%;
   padding: 0.5px;
   border: 0.5px solid gray;
@@ -428,12 +517,13 @@ aside {
   margin: auto;
 }
 
-.buttom-image img{
+.buttom-image img {
   width: 10rem;
   margin-left: 11%;
   padding-top: 10px;
 }
-.buttom-design{
+
+.buttom-design {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-content: center;
@@ -443,20 +533,24 @@ aside {
   width: 80%;
   margin-left: 10%;
 }
-.buttom-design a{
+
+.buttom-design a {
   color: black;
   text-decoration: none;
 }
-.buttom-design ul{
+
+.buttom-design ul {
   list-style: none;
   margin: 1rem;
   font-size: 15px;
 }
-.education{
+
+.education {
   border-bottom: 0.5px solid gray;
   padding-bottom: 5px;
 }
-.mobile{
+
+.mobile {
   padding-top: 6px;
 }
 
@@ -469,29 +563,32 @@ aside {
   padding: 20px;
   display: flex;
 }
-.trade{
+
+.trade {
   display: flex;
   align-content: center;
   font-size: 10px;
   width: 100%;
   text-decoration: none;
-  margin-left: 10%;
+  position: absolute;
+  justify-content: center;
 }
 
-.trade-mark a{
+.trade-mark a {
   color: #000;
   text-decoration: none;
 }
-.trade-mark ul{
+
+.trade-mark ul {
   list-style: none;
 }
-.trade li{  
-  padding: 10px;  
+
+.trade li {
+  padding: 10px;
   align-content: center;
 }
 
-
-.access{
+.access {
   margin: auto;
   display: grid;
   justify-content: center;
@@ -500,21 +597,29 @@ aside {
   width: 100%;
   background-color: white;
   padding-bottom: 30px;
+  border-top: 2px black solid;
 }
 
-.expand{
+.expand {
   position: absolute;
   right: 0;
   padding-right: 3rem;
   display: flex;
   align-items: baseline;
 }
-.expand h4{
+
+.expand h4 {
   padding-right: 3rem;
 }
-.main-footer{
+
+.main-footer {
   padding-bottom: 10%;
 }
 
-/* end of footer */
+.last-hr {
+  width: 80%;
+  margin: auto;
+  opacity: 0.3;
+}
 
+/* end of footer */
