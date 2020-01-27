@@ -55,6 +55,9 @@ body {
 }
 
 /* --------- End of navbar  styling ---------- */
+
+/* Main image  */
+
 article {
   text-align: center;
   display: inline-block;
@@ -84,6 +87,10 @@ article {
   font-size: 17px;
   color: rgb(87, 87, 87);
 }
+
+/* end of main image */
+
+/* icon bars and first section */
 
 .section-one {
   text-align: center;
@@ -132,11 +139,19 @@ article {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* end of icon bars and first section */
+
+/* middle create account */
+
 .middle-p {
   margin: auto;
   text-align: center;
   padding: 40px;
 }
+
+/* end of middle create account */
+
+/* Side bar first Side bar */
 
 aside {
   width: 250px;
@@ -177,6 +192,10 @@ aside {
   font-size: small;
   width: 8rem;
 }
+
+/* End of first Side bar */
+
+/* middle inflation image */
 
 .middle-design {
   display: grid;
@@ -222,6 +241,10 @@ aside {
   margin: 1rem;
 }
 
+/* end of middle inflation image */
+
+/* Third p section */
+
 .section-two {
   margin: auto;
   width: 40%;
@@ -235,6 +258,10 @@ aside {
   padding-top: 2rem;
 }
 
+/* end of Third p section */
+
+/* Embeded Video */
+
 .video-embed {
   padding-top: 4rem;
 }
@@ -243,6 +270,10 @@ aside {
   font-size: 18px;
   padding-bottom: 3rem;
 }
+
+/* End of embeded video */
+
+/* Embed telescope image */
 
 .telescope-image {
   margin: auto;
@@ -266,6 +297,10 @@ aside {
   display: block;
   text-align: justify;
 }
+
+/* End of Embed telescope image */
+
+/* Second icon bars */
 
 .footer-symbols ul {
   list-style: none;
@@ -295,12 +330,20 @@ aside {
   margin-bottom: 3rem;
 }
 
+/* end of second icon bars */
+
+/* End of fifth p section */
+
 .section-end,
 .section-end a {
   padding-top: 2rem;
   font-size: 15px;
   color: rgb(117, 116, 116);
 }
+
+/* End of fifth p section */
+
+/* main footer side bars */
 
 .more-stories {
   display: grid;
@@ -366,23 +409,74 @@ aside {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
-.editor-pic-one {
-  width: 52vw;
-  margin-left: 10%;
+.editor-pic-one{
+  width:52vw;
+  padding-bottom: 2rem;
 }
 
-.footer-links {
+/* End of footer side bars */
+
+/* footer */
+footer{
+  display: grid;
+  grid-template-rows: 1fr / 3fr 1fr 1fr;
+  align-content: center;
+}
+.footer-image{
+  width: 15rem;
+}
+.footer-design{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  align-content: center;
+  font-size: 15px;
+  padding-right: 10px;
+  grid-gap: 2rem;
   width: 80%;
+  margin-left: 10%;
+}
+.footer-design a{
+  color: black;
+}
+
+.trade-mark {
+  margin: auto;
+  padding: 20px;
+}
+.trade{
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  align-content: center;
+  font-size: 15px;
+  padding-right: 10px;
+  grid-gap: 2rem;
+  width: 80%;
+  margin-left: 10%;
+  text-decoration: none;
+}
+
+.trade-mark a{
+  color: #000;
+  text-decoration: none;
+}
+.trade-mark ul{
+  text-decoration: none;
+}
+
+.access{
+  padding-top: 10px;
+  margin: auto;
+  padding: 30px;
   align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr ;
 }
 
-.footer-links ul {
-  list-style: none;
+.access h4{
+  margin-left: 50%;
+}
+.access i{
+  float: right;
 }
 
-.copyright ul {
-  direction: flex;
-}
+
