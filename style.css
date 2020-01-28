@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -567,7 +568,7 @@ aside {
   display: flex;
   align-content: center;
   font-size: 10px;
-  width: 100%;
+  width: 90%;
   text-decoration: none;
   position: absolute;
   justify-content: center;
@@ -619,6 +620,10 @@ aside {
   width: 80%;
   margin: auto;
   opacity: 0.3;
+}
+
+.footericon{
+  width: 0.7rem
 }
 
 /* end of footer */
