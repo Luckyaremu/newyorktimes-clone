@@ -1,0 +1,629 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+  position: absolute;
+  justify-content: center;
+}
+
+/* --------Navbar Styling --------- */
+
+.header {
+  background-color: white;
+  border-bottom: 1px lightgrey solid;
+  box-shadow: none;
+  font-weight: bold;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+}
+
+.header ul {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 30px 30px 220px 1fr 150px 80px;
+  justify-items: center;
+  list-style: none;
+  width: 100%;
+}
+
+.header ul :nth-child(4) {
+  display: grid;
+}
+
+.header li,
+.header a {
+  align-items: center;
+  color: black;
+  display: grid;
+  font-weight: bold;
+  margin: auto;
+  text-decoration: none;
+}
+
+.header button {
+  background: #5c8099;
+  border-radius: 6px;
+  color: white;
+  font-size: 13px;
+  height: 35px;
+  padding: 10px;
+}
+
+.header img {
+  width: 15rem;
+}
+
+/* --------- End of navbar  styling ---------- */
+
+/* Main image  */
+
+article {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.title {
+  display: inline-block;
+  text-align: center;
+  width: 75%;
+}
+
+.title h1 {
+  font-size: 40px;
+  padding: 40px;
+}
+
+.title img {
+  height: 50%;
+  width: 100%;
+}
+
+.title p {
+  color: rgb(87, 87, 87);
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* end of main image */
+
+/* icon bars and first section */
+
+.section-one {
+  display: inline-block;
+  font-size: 23px;
+  text-align: center;
+  width: 40%;
+}
+
+@media screen and (max-width: 750px) {
+  .section-one {
+    width: 100%;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 30px;
+  }
+}
+
+.author-one {
+  display: grid;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.author-one a {
+  color: black;
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-decoration: none;
+}
+
+.symbols ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 40px 40px 40px 40px 40px 40px;
+  padding: 1fr/ 20px 1fr;
+  text-decoration: none;
+}
+
+.symbols li {
+  text-align: left;
+  font-weight: 100;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.first-section {
+  text-align: left;
+}
+
+.first-section a {
+  color: #5c8099;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* end of icon bars and first section */
+
+/* middle create account */
+
+.middle-p {
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+}
+
+.middle-p a {
+  color: #5c8099;
+}
+
+@media screen and (max-width: 750px) {
+  .middle-p {
+    width: 100%;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 30px;
+  }
+}
+
+/* end of middle create account */
+
+/* Side bar first Side bar */
+
+aside {
+  width: 250px;
+  margin-top: -18rem;
+  margin-right: 8rem;
+  float: right;
+}
+
+@media screen and (max-width: 1280px) {
+  aside {
+    margin-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  aside {
+    display: none;
+  }
+}
+
+.editors-picks li {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.editors-picks img {
+  width: 30%;
+  height: 30%;
+  float: left;
+  margin-right: 10px;
+}
+
+.editors-picks h3 {
+  font-size: 20px;
+  color: #000;
+}
+
+.editors-picks a {
+  display: block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.editors-picks p {
+  display: inline-block;
+  padding: 2px;
+  font-size: small;
+  width: 8rem;
+}
+
+/* End of first Side bar */
+
+/* middle inflation image */
+
+.middle-design {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin: 1rem;
+}
+
+.middle-design p {
+  font-size: 13px;
+}
+
+.middle-design img {
+  width: 100%;
+  height: 10rem;
+}
+
+.secondp {
+  margin: auto;
+  width: 40%;
+  font-size: 20px;
+  display: block;
+}
+
+@media screen and (max-width: 750px) {
+  .secondp {
+    width: 100%;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 30px;
+  }
+}
+
+.editor-item {
+  display: flex;
+  padding: 1rem;
+}
+
+.theory {
+  width: 70%;
+  margin-left: 15%;
+}
+
+@media screen and (max-width: 750px) {
+  .theory {
+    width: 100%;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 30px;
+  }
+
+  .theory p {
+    font-size: 25px;
+  }
+}
+
+.theory h3 {
+  margin: 1rem;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.hr {
+  width: 6rem;
+  margin: 1rem;
+}
+
+/* end of middle inflation image */
+
+/* Third p section */
+
+.section-two {
+  margin: auto;
+  width: 40%;
+  font-size: 20px;
+  display: block;
+  text-align: justify;
+}
+
+@media screen and (max-width: 750px) {
+  .section-two {
+    width: 100%;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 30px;
+  }
+}
+
+.section-two h3 {
+  font-weight: bolder;
+  padding-top: 2rem;
+}
+
+/* end of Third p section */
+
+/* Embeded Video */
+
+.video-embed {
+  padding-top: 4rem;
+}
+
+.video-embed iframe {
+  width: 100%;
+}
+
+.video-embed p {
+  font-size: 18px;
+  padding-bottom: 3rem;
+}
+
+/* End of embeded video */
+
+/* Embed telescope image */
+
+.telescope-image {
+  margin: auto;
+  width: 50%;
+  font-size: 20px;
+  display: block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: rgb(83, 83, 83);
+}
+
+.telescope-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .telescope-image {
+    width: 100%;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 30px;
+  }
+}
+
+.section-three {
+  margin: auto;
+  width: 40%;
+  font-size: 20px;
+  display: block;
+  text-align: justify;
+}
+
+@media screen and (max-width: 750px) {
+  .section-three {
+    width: 100%;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 30px;
+  }
+}
+
+/* End of Embed telescope image */
+
+/* Second icon bars */
+
+.footer-symbols ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 40px 40px 40px 40px;
+  padding: 1fr/ 20px 1fr;
+  text-decoration: none;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.footer-symbols li {
+  text-align: left;
+  font-weight: 100;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.footer-symbols button {
+  background: #5c8099;
+  padding: 0.8rem;
+  width: 70%;
+  border-radius: 5px;
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+  margin-bottom: 3rem;
+}
+
+/* end of second icon bars */
+
+/* End of fifth p section */
+
+.section-end,
+.section-end a {
+  padding-top: 2rem;
+  font-size: 15px;
+  color: rgb(117, 116, 116);
+}
+
+/* End of fifth p section */
+
+/* main footer side bars */
+
+.more-stories {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2rem;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.space-astronomy {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.space-astronomy p {
+  font-size: 13px;
+  color: gray;
+}
+
+.writer {
+  text-align: right;
+}
+
+.space-astronomy a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.space-astronomy img {
+  width: 100%;
+}
+
+.stories-one {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 19px;
+  color: #000;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.most-popular h3 {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 19px;
+}
+
+.most-popular a {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.bottom-hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.editor-pic-one {
+  width: 52vw;
+  padding-bottom: 2rem;
+}
+
+/* End of footer side bars */
+
+/* more info */
+
+.footer-hr {
+  width: 80%;
+  padding: 0.5px;
+  border: 0.5px solid gray;
+  border-left: none;
+  border-right: none;
+  margin: auto;
+}
+
+.buttom-image img {
+  width: 10rem;
+  margin-left: 11%;
+  padding-top: 10px;
+}
+
+.buttom-design {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-content: center;
+  font-size: 15px;
+  padding-right: 10px;
+  grid-gap: 2rem;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.buttom-design a {
+  color: black;
+  text-decoration: none;
+}
+
+.buttom-design ul {
+  list-style: none;
+  margin: 1rem;
+  font-size: 15px;
+}
+
+.education {
+  border-bottom: 0.5px solid gray;
+  padding-bottom: 5px;
+}
+
+.mobile {
+  padding-top: 6px;
+}
+
+/* end of more info */
+
+/* footer */
+
+.trade-mark {
+  margin: auto;
+  padding: 20px;
+  display: flex;
+}
+
+.trade {
+  display: flex;
+  align-content: center;
+  font-size: 10px;
+  width: 90%;
+  text-decoration: none;
+  position: absolute;
+  justify-content: center;
+}
+
+.trade-mark a {
+  color: #000;
+  text-decoration: none;
+}
+
+.trade-mark ul {
+  list-style: none;
+}
+
+.trade li {
+  padding: 10px;
+  align-content: center;
+}
+
+.access {
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding-bottom: 30px;
+  border-top: 2px black solid;
+}
+
+.expand {
+  position: absolute;
+  right: 0;
+  padding-right: 3rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.expand h4 {
+  padding-right: 3rem;
+}
+
+.main-footer {
+  padding-bottom: 10%;
+}
+
+.last-hr {
+  width: 80%;
+  margin: auto;
+  opacity: 0.3;
+}
+
+.footericon {
+  width: 0.7rem;
+}
+
+/* end of footer */
